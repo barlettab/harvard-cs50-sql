@@ -122,28 +122,67 @@ The course covers relational databases, SQL, database design, data manipulation,
 
 Each directory contains the exercises and problem sets completed during the corresponding week of the course.
 
-
-
 ## Final Project
 
-🚧 **Pending**
+### ORMS — Operating Room Management System
 
-The final project will apply the concepts developed throughout the course to the design and implementation of a complete relational database.
+ORMS is a relational database designed to manage operating room schedules and the resources required for surgeries.
 
-This section will be updated with:
+The project was inspired by the operating room whiteboard shown in *Grey's Anatomy*, where doctors, surgeons, and nurses can follow the surgeries scheduled for each day. The goal was to transform this idea into a structured database that can be used to manage surgeries, patients, medical staff, operating rooms, and equipment.
 
-* Problem definition
-* Database design
-* Entity Relationship Diagram
-* Schema
-* SQL implementation
-* Queries
-* Views
-* Indexes
-* Performance considerations
-* Python integration, if applicable
-* Results and conclusions
+### Main Features
 
+* Patient and medical record management
+* Surgical procedure catalog
+* Operating room management
+* Medical staff and professional license tracking
+* Equipment and room equipment management
+* Surgery scheduling
+* Many-to-many relationships between surgeries, staff, and equipment
+* Daily surgical schedule
+* Staff schedule
+* Operating room status and next scheduled surgery
+* Operating room utilization analysis
+* Equipment availability verification
+* Operating room scheduling conflict detection
+* Medical staff scheduling conflict detection
+
+### Database Design
+
+The database was designed using relational database principles and includes:
+
+* Primary and foreign keys
+* `NOT NULL`, `UNIQUE`, and `CHECK` constraints
+* Many-to-many junction tables
+* Indexes for frequently used queries
+* Views for schedules and operational analysis
+* Triggers to prevent scheduling conflicts
+* SQLite date and time functions for scheduling and utilization analysis
+
+The main entities are:
+
+`patients` · `procedures` · `operating_rooms` · `medical_staff` · `equipment` · `surgeries`
+
+The project also includes the junction tables:
+
+`surgery_staff` · `surgery_equipment` · `room_equipment`
+
+### Project Files
+
+```text
+Final/
+└── project/
+    ├── schema.sql
+    ├── sample_data.sql
+    ├── queries.sql
+    ├── DESIGN.md
+    ├── relationships.png
+    └── orms.db
+```
+
+The `schema.sql` file defines the database structure, `sample_data.sql` contains example records, and `queries.sql` contains queries demonstrating the functionality of the database. `DESIGN.md` documents the database design, relationships, optimizations, and limitations.
+
+[View the Final Project](./Final/project)
 
 ## Author
 
