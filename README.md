@@ -117,10 +117,21 @@ The course covers relational databases, SQL, database design, data manipulation,
 ├── week_4/
 ├── week_5/
 ├── week_6/
+├── Final/
+│   └── project/
+│       ├── schema.sql
+│       ├── sample_data.sql
+│       ├── queries.sql
+│       ├── DESIGN.md
+│       ├── relationships.png
+│       └── orms.db
 └── README.md
 ```
 
 Each directory contains the exercises and problem sets completed during the corresponding week of the course.
+
+The `Final/project/` directory contains the final project, including the database schema, sample data, queries, design documentation, and entity relationship diagram.
+
 
 ## Final Project
 
