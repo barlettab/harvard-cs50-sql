@@ -202,3 +202,4 @@ The `schema.sql` file defines the database structure, `sample_data.sql` contains
 Data Analyst Intern · Python · SQL · Machine Learning · Risk Analytics
 
 [GitHub](https://github.com/barlettab)
+[Medium](https://medium.com/@barlettabc/from-grey-sloans-whiteboard-to-a-relational-database-4a40336625eb?postPublishedType=initial)
